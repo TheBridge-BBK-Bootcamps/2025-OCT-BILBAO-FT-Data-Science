@@ -13,7 +13,7 @@ def home():
 # 1.Ruta para obtener todos los libros
 @app.route('/v1/all_books', methods=['GET'])
 def all_books():
-    return books
+    return jsonify(books)
 
 # 2.Ruta para obtener un libro concreto mediante su id como parámetro en la llamada
 @app.route('/v1/book_by_id', methods=['GET'])
